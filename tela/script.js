@@ -4,6 +4,9 @@ function createMap() {
 	var mapOptions = {
 		center: new google.maps.LatLng(-1.4558333333, -48.5027777778),
 		zoom: 15, 
+		disableDoubleClickZoom: true,
+		draggable: true,
+		streetViewControl: true,
 	};
 	
 	map = new google.maps.Map(document.getElementById("map"), mapOptions);
