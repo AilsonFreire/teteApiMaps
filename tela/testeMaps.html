@@ -8,13 +8,19 @@
 	</head>
 	<body>
 		<div id="map">
-			<div class="divtitle">O lugar onde o mapa vai aparecer</div>
 		</div>
 		<div class="divborder">
-			<div class="divbtn">
-				<button onClick="loadTheMap();">Load the map</button>
-			</div>
+				<div class="col-sm-2"> 
+					 <button onClick="loadTheMap();">Load the map</button>
+					 <button type="button" id="select" class="btn btn-default drawing-control" data-type="">Selecionar</button>
+					 <button type="button" id="marker" class="btn btn-default drawing-control" data-type="m">Ponto Base</button>
+					 <button type="button" id="pRoute" class="btn btn-default drawing-control" data-type="pr">Ponto de Rota</button>
+			         <button type="button" id="global" class="btn btn-default drawing-control" data-type="g">Local de Referência</button>
+			         <button type="button" id="route" class="btn btn-default drawing-control" data-type="r">Rota</button>
+			         <button type="button" id="area" class="btn btn-default drawing-control" data-type="a">Área</button>
+				</div>
 		</div>
 		<script src="script.js"></script>
 	</body>
 </html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
